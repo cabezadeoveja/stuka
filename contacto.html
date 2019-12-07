@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf0fd7c03e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto mb-2 mb-md-0" style="margin-top: 10px;">
                     <li class="nav-item active pr-3 pl-3">
-                        <a class="nav-link py-1 active-item" href="index.html">Inicio</a>
+                        <a class="nav-link py-1" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item pr-3 pl-3">
                         <a class="nav-link py-1" href="#">Quiénes somos</a>
@@ -44,7 +45,7 @@
                         <a class="nav-link py-1" href="#">Galería</a>
                     </li>
                     <li class="nav-item pr-3 pl-3">
-                        <a class="nav-link py-1" href="contacto.html">Contáctanos</a>
+                        <a class="nav-link py-1 active-item" href="contacto.html">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -98,40 +99,88 @@
         </nav>
     </header>
 
-    <section class="seccion seccionIndex">
+    <section class="seccion seccionContacto">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h1>CONTÁCTANOS</h1>
+                            <h1>ESCRÍBENOS</h1>
+                            <div class="hr"></div>
+                            <p class="mt-3 parrafo">Si tienes alguna sugerencia o pregunta, hacernos alguna donación o ser parte de nuestro equipo mandanos un mensaje.</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nombre y apellido</label>
+                                                <input type="email" class="form-control" id="nombre" placeholder="Ingresa tu nombre y apellido">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Motivo</label>
+                                                <input type="email" class="form-control" id="motivo"  placeholder="Ingresa el motivo">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email</label>
+                                                <input type="email" class="form-control" id="emeil" placeholder="Ingresa email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Teléfono/celular</label>
+                                                <input type="email" class="form-control" id="telefono" placeholder="Ingresa numero de contacto">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingresa tu mensaje"></textarea></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <button type="button" class="btn btn-enviar btn-block">ENVIAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="mt-5 footer">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                            <img src="assets/img/logo_mensaje.png" class="img-fluid mx-auto d-block logo-mensaje">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                        <img src="assets/img/logo_mensaje.png" class="img-fluid mx-auto d-block logo-mensaje">
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center text-footer">
+                        <img src="assets/img/logo_footer.png" class="img-fluid mx-auto d-block" width="60">
+                        <p>© 2019 Fundación Stuka</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3 text-center text-footer">
-                            <img src="assets/img/logo_footer.png" class="img-fluid mx-auto d-block" width="60">
-                            <p>© 2019 Fundación Stuka</p>
-                        </div>
-                        <div class="col-md-6 text-center text-footer">
-                            <p>Puedes escribirnos a <span style="text-decoration: underline;">contacto@fundacionstuka.cl</span></p>
-                            <p>Somos una fundación <strong>solo de perros</strong> Ubicados en Casablanca y Santiago.</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <i class="fab fa-facebook-square icon-redes"></i>
-                            <i class="fab fa-instagram icon-redes"></i>
-                            <i class="fab fa-youtube icon-redes"></i>
-                        </div>
+                    <div class="col-md-6 text-center text-footer">
+                        <p>Puedes escribirnos a <span style="text-decoration: underline;">contacto@fundacionstuka.cl</span></p>
+                        <p>Somos una fundación <strong>solo de perros</strong> Ubicados en Casablanca y Santiago.</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fab fa-facebook-square icon-redes"></i>
+                        <i class="fab fa-instagram icon-redes"></i>
+                        <i class="fab fa-youtube icon-redes"></i>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
