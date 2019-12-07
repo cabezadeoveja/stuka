@@ -1,0 +1,7 @@
+@font-face {
+font-family:VAGRounded BT;
+src: url(img/VAGRounded.ttf);
+}
+h1{
+    font-family:VAGRounded;
+}
