@@ -31,6 +31,21 @@ body {
     padding-bottom: 320px;
 }
 
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .seccion{
+        margin-top: 50px;
+        padding-bottom: 450px;
+    }
+}
+
 /*header*/
 header{
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)
