@@ -1,0 +1,41 @@
+.top{
+    margin-top: 0px;
+    padding: 0;
+}
+.p-botton{
+    padding-bottom: inherit;
+}
+.pa-0{
+    padding: 0;
+}
+.m-t{
+    margin-top: 50px;
+}
+.button-container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.button-container a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-transparente{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 10px 30px;
+}
+@media (min-width: 768px){
+    .btn-transparente{
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 24px;
+        padding: 8px 15px;
+    }
+}
+@media (min-width: 576px){
+    
+}
