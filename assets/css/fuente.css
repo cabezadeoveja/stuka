@@ -1,7 +1,8 @@
 @font-face {
-font-family:VAGRounded BT;
-src: url(img/VAGRounded.ttf);
-}
-h1,h2{
-    font-family:VAGRounded;
+    font-family: VAGRounded;
+    src: url(../font/VAGRounded_BT.ttf);
+ }
+
+ h1, h2 {
+    font-family: VAGRounded;
 }
