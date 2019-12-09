@@ -3,6 +3,6 @@
     src: url(../font/VAGRounded_BT.ttf);
  }
 
- h1, h2 {
+ h1, h2, h4 {
     font-family: VAGRounded;
 }
