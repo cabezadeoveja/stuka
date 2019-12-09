@@ -11,6 +11,9 @@
 .m-t{
     margin-top: 50px;
 }
+.m-t-15{
+    margin-top: 25px;
+}
 .button-container{
     position: relative;
     display: inline-block;
@@ -27,6 +30,10 @@
     font-weight: bold;
     border-radius: 24px;
     padding: 10px 30px;
+}
+.fondo-home {
+    background: blue;
+    background-image: url(../img/fondo-huesos.png);
 }
 @media (min-width: 768px){
     .btn-transparente{
