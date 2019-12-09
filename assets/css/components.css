@@ -146,6 +146,7 @@ footer {
     height: auto;
     margin-bottom: 10px;
 }
+
 /*home*/
 .btn-secondary{
     background: var(--celeste);
@@ -155,10 +156,12 @@ footer {
     text-transform: uppercase;
     font-weight: 900;
 }
+
 .btn-secondary:hover{
     background: var(--celesteHover);
     border-color: var(--celesteHover);
 }
+
 .title{
     color: var(--celeste);
 }
