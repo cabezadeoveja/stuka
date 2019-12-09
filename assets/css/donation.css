@@ -1,0 +1,37 @@
+h1{
+    color: var(--gris);
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+h4{
+    color: var(--gris);
+}
+
+h2{
+    color: var(--gris);
+}
+
+.hr{
+    border-top: 8px solid var(--celeste);
+    width: 100px;
+    margin-top: 8px;
+}
+
+.bg-donation {
+    min-height: 250px;
+}
+
+.icon-card {
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.bg-donation {
+    margin-top: -35px;
+}
+
+.pattern-donation {
+    background-image: url(../img/bg-donation.png);
+}
