@@ -169,3 +169,14 @@ footer {
 .p-t{
     padding-top: 50px;
 }
+.miga-de-pan{
+    background-color: transparent;
+    padding: .75rem 2rem;
+    margin-bottom: 0rem;
+}
+.breadcrumb-item{
+    font-weight: bold;
+}
+.breadcrumb-item a{
+    color: var(--rosado);
+}
