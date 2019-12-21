@@ -22,6 +22,7 @@
     text-align: center;
     color: #de5c8e;
     margin-bottom: 30px;
+    padding: 10px 35px;
 
 }
 .filter-button:hover
@@ -49,10 +50,24 @@
     margin-bottom: 30px;
 }
 .title-top{
-    margin-top: 20px;
+    margin-top: 20px
+}
+.botones-select{
+    margin-bottom: 30px;
 }
 .filter-button:focus{
     background-color: #de5c8e;
     color: white;
     box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.08);
+}
+.parrafo{
+    color: var(--gris);
+}
+@media only screen and (max-width: 600px) {
+    .filter-button
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    
+    }
 }

@@ -28,7 +28,7 @@ body {
 }
 
 .seccion{
-    margin-top: 95px;
+    margin-top: 65px;
     padding-bottom: 320px;
 }
 
@@ -50,10 +50,11 @@ body {
     }
 
     .seccion{
-        margin-top: 50px;
+        margin-top: 40px;
         padding-bottom: 450px;
     }
 }
+
 /*header*/
 header{
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)
@@ -97,6 +98,7 @@ h5 a:hover{
     border-radius: 30px;
     border-color: var(--rosado);
     font-weight: 500;
+    padding: 10px 35px;
 }
 
 .btn-primary:hover{
@@ -160,23 +162,39 @@ footer {
     background: var(--celesteHover);
     border-color: var(--celesteHover);
 }
+
 .title{
     color: var(--celeste);
 }
+
 .parrafo-rosa{
     color: var(--rosado);
 }
+
 .p-t{
     padding-top: 50px;
 }
+
 .miga-de-pan{
     background-color: transparent;
     padding: .75rem 2rem;
     margin-bottom: 0rem;
 }
+
 .breadcrumb-item{
     font-weight: bold;
 }
+
 .breadcrumb-item a{
     color: var(--rosado);
+}
+
+@media only screen and (max-width: 600px) {
+    .miga-de-pan{
+    background-color: transparent;
+    padding: .75rem 2rem;
+    margin-bottom: 0rem;
+    padding-left: 15px;
+    padding-bottom: 0;
+    }
 }
