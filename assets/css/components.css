@@ -12,9 +12,9 @@ body {
 }
 
 :root {
-    --rosado: #de5c8e;
+    --rosado: #d02671;
     --rosadoHover: #d15182;
-    --celeste: #009cc9;
+    --celeste: #007ac0;
     --celesteHover: #0384AA;
     --gris: #707070;
 }
@@ -69,7 +69,7 @@ nav{
 }
 
 .btn-donar{
-    padding: 28px 0;
+    padding: 17px 0;
     background: var(--rosado);
 }
 
@@ -77,11 +77,11 @@ nav{
     background: var(--rosado);
 }
 
-h5 a{
+h6 a{
     color: #fff;
 }
 
-h5 a:hover{
+h6 a:hover{
     color: #fff;
     text-decoration: none;
 }
@@ -109,7 +109,8 @@ h5 a:hover{
 .nav-link{
     color: var(--celeste)!important;
     font-weight: bolder;
-    padding-top: 10px !important;
+    padding-bottom: 14px;
+    padding-top: 18px;
 }
 
 .donar-small{
