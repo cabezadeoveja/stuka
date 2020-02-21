@@ -17,29 +17,37 @@
 </head>
 
 <body>
-    <header class="d-none d-lg-block">
+    <header class="d-none d-md-none d-lg-block">
         <nav class="p-0 navbar navbar-expand-md navbar-light bg-white">
             <h3 class="my-auto">
                 <a href="index.html"><img src="assets/img/logo.svg" alt="Logo Stuka" width="150"class="img-fluid logotipo"></a>
             </h3>
             <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto mb-2 mb-md-0" style="margin-top: 10px;">
-                    <li class="nav-item active">
+                    <li class="nav-item p-menu">
                         <a class="nav-link active-item" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item p-menu">
                         <a class="nav-link" href="quienesSomos.html">Quiénes somos</a>
                     </li>
-                    <li>
+                    <li class="nav-item p-menu">
                         <a class="nav-link" href="#">Adopta</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="quienesSomos.html">Ayuda</a>
+                    <li class="nav-item p-menu">
+                        <div class="nav-link dropdown">
+                            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Ayuda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Apadrinar</a>
+                              <a class="dropdown-item" href="#">Ser voluntario</a>
+                            </div>
+                          </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-menu">
                         <a class="nav-link " href="#">Noticias</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-menu">
                         <a class="nav-link" href="contacto.html">Contáctanos</a>
                     </li>
                 </ul>
@@ -50,7 +58,7 @@
         </nav>
     </header>
 
-    <header class="d-lg-none">
+    <header class="d-lg-none d-xl-block">
         <nav class="navbar navbar-expand-md navbar-light bg-white">
             <h3 class="my-auto"><a href="index.html"><img src="assets/img/logo_small.png" alt="Logo Stuka" width="90"
                         class="img-fluid logotipo_small"></a></h3>
@@ -58,34 +66,36 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
-                    <li class="nav-item active pr-3 pl-3">
-                        <a class="nav-link py-1" href="#">Adoptar</a>
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0" style="margin-top: 10px;">
+                    <li class="nav-item p-menu">
+                        <a class="nav-link active-item-movil" href="index.html"><img class="img-menu" src="assets/img/dog-house.svg" alt="inicio">Inicio</a>
                     </li>
-                    <li class="nav-item pr-3 pl-3">
-                            <a class="btn btn-primary py-1" href="apadrina.html">Apadrinar</a>
+                    <li class="nav-item p-menu">
+                        <a class="nav-link text-normal" href="quienesSomos.html">Quiénes somos</a>
                     </li>
-                    <li class="nav-item pr-3 pl-3">
-                        <a class="nav-link py-1" href="#">Ser voluntario</a>
+                    <li class="nav-item p-menu">
+                        <a class="nav-link text-normal" href="#">Adopta</a>
                     </li>
-                    <li class="nav-item active pr-3 pl-3">
-                            <a class="nav-link py-1" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link py-1" href="quienesSomos.html">Quiénes somos</a>
-                        </li>
-                        <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link py-1" href="#">Noticias</a>
-                        </li>
-                        <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link py-1" href="galeria.html">Galería</a>
-                        </li>
-                        <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link py-1" href="contacto.html">Contáctanos</a>
-                        </li>
-                        <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link donar-small py-1" href="donacion.html">HAZ UNA DONACIÓN</a>
-                        </li>
+                    <li class="nav-item p-menu">
+                        <div class="nav-link dropdown">
+                            <a class="dropdown-toggle text-normal" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Ayuda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Apadrinar</a>
+                              <a class="dropdown-item" href="#">Ser voluntario</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="nav-item p-menu">
+                        <a class="nav-link text-normal" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item p-menu">
+                        <a class="nav-link text-normal" href="contacto.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item p-menu">
+                        <a class="nav-link text-normal" href="contacto.html">HAZ UNA DONACIÓN</a>
+                    </li>
                 </ul>
             </div>
         </nav>

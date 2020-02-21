@@ -14,8 +14,8 @@ body {
 :root {
     --rosado: #d02671;
     --rosadoHover: #d15182;
-    --celeste: #007ac0;
-    --celesteHover: #0384AA;
+    --celeste: #1aa3db;
+    --celesteHover: #11a1dae5;
     --gris: #707070;
 }
 
@@ -67,7 +67,6 @@ nav{
 .active-item{
     border-bottom: 5px solid var(--celeste);
 }
-
 .btn-donar{
     padding: 17px 0;
     background: var(--rosado);

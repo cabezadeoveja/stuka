@@ -49,6 +49,16 @@
 .p-b{
     padding-bottom: 30px;
 }
+.p-menu{
+    padding: 0 15px;
+}
+.img-menu{
+    vertical-align: baseline;
+    padding-right: 10px;
+}
+.text-normal{
+    font-weight: normal !important;
+}
 @media only screen and (max-width: 991px) and (min-width: 768px){
     .btn-transparente{
         text-transform: uppercase;
