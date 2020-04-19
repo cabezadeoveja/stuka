@@ -1,0 +1,29 @@
+.show-banner-lg,
+.show-banner-md,
+.show-banner-sm {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .show-banner-lg {
+        display: block;
+    }
+}
+
+
+/* Medium */
+
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+    .show-banner-md {
+        display: block;
+    }
+}
+
+
+/* Small */
+
+@media only screen and (max-width: 576px) {
+    .show-banner-sm {
+        display: block;
+    }
+}
