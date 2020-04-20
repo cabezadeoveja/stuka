@@ -1,13 +1,56 @@
 .show-banner-lg,
 .show-banner-md,
 .show-banner-sm {
-    display: none;
+    display: none !important;
 }
+
+.carousel-parraf {
+    position: absolute;
+    z-index: 20;
+    left: 10%;
+    right: 15%;
+    bottom: 35px;
+}
+
+.carousel-parraf p,
+.carousel-parraf button {
+    text-transform: uppercase;
+}
+
+.carousel-parraf button:focus {
+    outline-style: none !important;
+}
+
+.carousel-parraf p {
+    color: white;
+    font-family: 'vagRounded-bt';
+    font-size: 40px;
+}
+
+.carousel-parraf button {
+    background-color: var(--celeste);
+    color: white;
+    width: 157px;
+    border-radius: 25px !important;
+    font-family: 'Roboto';
+}
+
+
+/* .carousel-btn {
+    position: absolute;
+    z-index: 20;
+    top: 60%;
+    left: 30%;
+} */
 
 @media only screen and (min-width: 992px) {
     .show-banner-lg {
-        display: block;
+        display: block !important;
     }
+    /* .carousel-main img {
+        object-fit: cover;
+        height: 600px;
+    } */
 }
 
 
@@ -15,7 +58,7 @@
 
 @media only screen and (max-width: 991px) and (min-width: 576px) {
     .show-banner-md {
-        display: block;
+        display: block !important;
     }
 }
 
@@ -24,6 +67,6 @@
 
 @media only screen and (max-width: 576px) {
     .show-banner-sm {
-        display: block;
+        display: block !important;
     }
 }

@@ -1,28 +1,48 @@
 <div class="carousel-main">
 
     <!-- lg -->
-    <owl-carousel-o [options]="customOptions" class="show-banner-lg">
+    <owl-carousel-o [options]="customOptions">
 
         <ng-container class="d-none d-lg-block">
             <ng-template carouselSlide id="1">
-                <img src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+                <div class="carousel-parraf">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-9 col-sm-8">
+                            <p>Porque el mejor amigo del hombre merece una voz</p>
+                            <button class="carousel-btn" mat-raised-button>Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="show-banner-lg" src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-md" src="assets/img/banners-main/banner-tablet.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-sm" src="assets/img/banners-main/banner-movil.png" alt="Perro" title="Perro">
             </ng-template>
         </ng-container>
         <ng-container class="d-none d-lg-block">
             <ng-template carouselSlide id="2">
-                <img src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+                <img class="show-banner-lg" src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-md" src="assets/img/banners-main/banner-tablet.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-sm" src="assets/img/banners-main/banner-movil.png" alt="Perro" title="Perro">
             </ng-template>
         </ng-container>
         <ng-container class="d-none d-lg-block">
             <ng-template carouselSlide id="3">
-                <img src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+                <img class="show-banner-lg" src="assets/img/banners-main/banner.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-md" src="assets/img/banners-main/banner-tablet.png" alt="Perro" title="Perro">
+
+                <img class="show-banner-sm" src="assets/img/banners-main/banner-movil.png" alt="Perro" title="Perro">
             </ng-template>
         </ng-container>
 
     </owl-carousel-o>
 
     <!-- Medium screem -->
-    <owl-carousel-o [options]="customOptions" class="show-banner-md">
+    <!--     <owl-carousel-o [options]="customOptions" class="show-banner-md">
         <ng-container class="d-none d-md-block d-lg-none">
             <ng-template carouselSlide id="4">
                 <img src="assets/img/banners-main/banner-tablet.png" alt="Perro" title="Perro">
@@ -38,10 +58,10 @@
                 <img src="assets/img/banners-main/banner-tablet.png" alt="Perro" title="Perro">
             </ng-template>
         </ng-container>
-    </owl-carousel-o>
+    </owl-carousel-o> -->
 
     <!-- Small screem -->
-    <owl-carousel-o [options]="customOptions" class="show-banner-sm">
+    <!-- <owl-carousel-o [options]="customOptions" class="show-banner-sm">
         <ng-container class="d-none d-sm-block d-md-none">
             <ng-template carouselSlide id="7">
                 <img src="assets/img/banners-main/banner-movil.png" alt="Perro" title="Perro">
@@ -57,6 +77,6 @@
                 <img src="assets/img/banners-main/banner-movil.png" alt="Perro" title="Perro">
             </ng-template>
         </ng-container>
-    </owl-carousel-o>
+    </owl-carousel-o> -->
 
 </div>

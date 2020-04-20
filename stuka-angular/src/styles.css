@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+/* Font */
+
+@font-face {
+    font-family: 'vagRounded-bt';
+    src: url('assets/font/VAGRounded_BT.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,3 +30,26 @@ body {
     --celesteHover: #11a1dae5;
     --gris: #707070;
 }
+
+
+/* Inicio carousel btn */
+
+.carousel-main .owl-dots {
+    right: 0px;
+    transform: rotate(90deg);
+    position: absolute !important;
+    top: 35%;
+}
+
+.carousel-main .owl-dots .owl-dot span {
+    background-color: #d02671 !important;
+    width: 18px;
+    height: 18px;
+}
+
+.carousel-main .owl-dots .owl-dot.active span {
+    background-color: #11a1dae5 !important;
+}
+
+
+/* Fin carousel btn */

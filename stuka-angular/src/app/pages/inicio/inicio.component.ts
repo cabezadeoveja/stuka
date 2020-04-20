@@ -11,7 +11,7 @@ export class InicioComponent implements OnInit {
 
   public customOptions: OwlOptions = {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,

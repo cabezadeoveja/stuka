@@ -3,6 +3,14 @@
     cursor: pointer;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    color: var(--celeste) !important;
+}
+
 @media only screen and (max-width: 991px) {
     .navbar-brand {
         margin-left: 5px;
@@ -13,6 +21,14 @@
     li button {
         width: 100% !important;
         padding: 0 !important;
+        padding-left: 25px !important;
+        text-align: left !important;
+    }
+    li button a {
+        color: var(--celeste);
+    }
+    li button img {
+        margin-right: 10px;
     }
     li button:focus,
     .navbar-toggler:focus {
@@ -20,6 +36,9 @@
     }
     .link-donacion li {
         list-style-type: none;
+    }
+    .mobile-menu-icon {
+        display: inline-block;
     }
     .heart-icon {
         display: none !important;
@@ -116,5 +135,11 @@
     .menu-lg-dinamic li button {
         padding-left: 3px !important;
         padding-right: 3px !important;
+    }
+    .carousel-main .owl-dots {
+        right: 0px;
+        transform: rotate(90deg);
+        position: absolute !important;
+        top: 45%;
     }
 }

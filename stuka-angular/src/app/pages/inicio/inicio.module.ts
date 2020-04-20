@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { InicioRoutingModule } from './inicio-routing.module';
 import { InicioComponent } from './inicio.component';
 
+import { MatButtonModule } from '@angular/material/button';
+
 /* Carousel */
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -12,7 +14,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   imports: [
     CommonModule,
     InicioRoutingModule,
-    CarouselModule
+    CarouselModule,
+    MatButtonModule
   ]
 })
 export class InicioModule { }

@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     background: var(--celeste);
     padding-left: 25px;
