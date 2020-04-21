@@ -36,6 +36,42 @@
 }
 
 
+/* Como ayudar */
+
+.row-2-como-ayudar .text-center {
+    padding: 0px !important;
+}
+
+.button-container img {
+    /* width: 345px; */
+    height: 477px;
+    object-fit: cover;
+}
+
+.button-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 33px;
+    width: 209px;
+    border: 2px solid #FFFFFF;
+    height: 52px;
+    font-family: 'vagRounded-bt';
+    font-size: 23px;
+    color: white;
+}
+
+.button-container button:hover {
+    background-color: white;
+    color: gray;
+}
+
+.button-container button:focus {
+    outline-style: none;
+}
+
+
 /* .carousel-btn {
     position: absolute;
     z-index: 20;
