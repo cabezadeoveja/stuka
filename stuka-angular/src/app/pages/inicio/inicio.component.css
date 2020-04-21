@@ -36,7 +36,7 @@
 }
 
 
-/* Como ayudar */
+/* Inici Como ayudar */
 
 .row-2-como-ayudar .text-center {
     padding: 0px !important;
@@ -70,6 +70,14 @@
 .button-container button:focus {
     outline-style: none;
 }
+
+.fondo-home {
+    /* background: blue; */
+    background-image: url('../../../assets/img/fondo-huesos.png');
+}
+
+
+/* Fin Como ayudar */
 
 
 /* .carousel-btn {
