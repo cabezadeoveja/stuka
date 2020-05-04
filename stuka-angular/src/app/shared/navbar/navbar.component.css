@@ -28,11 +28,20 @@ header {
         padding-left: 25px !important;
         text-align: left !important;
     }
-    li button a {
+    li button a,
+    li button .login {
         color: var(--celeste);
     }
-    li button img {
+    li button img,
+    li button .login {
         margin-right: 10px;
+    }
+    li button.ingresar {
+        background-color: var(--celeste);
+    }
+    li button.ingresar .login,
+    li button.ingresar a {
+        color: white;
     }
     li button:focus,
     .navbar-toggler:focus {
@@ -54,6 +63,9 @@ header {
     max-width: 1440px;
     margin: 0 auto;
 } */
+    .li-ingresar {
+        display: none;
+    }
     .link-donacion {
         list-style-type: none;
         margin-bottom: 0;
@@ -117,6 +129,14 @@ header {
         width: 116px;
         display: inline-block;
         line-height: 32px;
+    }
+    .menu-centro ul:nth-child(1) button.ingresar {
+        background-color: var(--celeste) !important;
+        padding-left: 5px !important;
+        padding-right: 9px !important;
+    }
+    .menu-centro ul:nth-child(1) button.ingresar a {
+        width: auto !important;
     }
     .menu-lg-dinamic {
         margin-top: 10px;

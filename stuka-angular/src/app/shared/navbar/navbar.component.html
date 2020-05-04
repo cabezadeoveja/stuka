@@ -13,6 +13,14 @@
 
                     <ul class="navbar-nav ml-lg-auto d-none">
                         <li class="nav-item">
+                            <button class="ingresar" mat-raised-button (click)="openDialog()">
+                                <mat-icon class="login" aria-hidden="false" aria-label="Example account_circle icon">
+                                        account_circle
+                                </mat-icon>
+                                <a>Ingresar</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
                             <button mat-raised-button>
                             <a>Adoptar</a>
                         </button>
@@ -30,6 +38,14 @@
                     </ul>
 
                     <ul class="navbar-nav ml-lg-auto menu-lg-dinamic">
+                        <li class="nav-item li-ingresar">
+                            <button class="ingresar" mat-flat-button (click)="openDialog()">
+                                <mat-icon class="login" aria-hidden="false" aria-label="Example account_circle icon">
+                                        account_circle
+                                </mat-icon>
+                                <a>Ingresar</a>
+                            </button>
+                        </li>
                         <li class="nav-item">
                             <button mat-flat-button>
                                 <img class='mobile-menu-icon' src="assets/img/icons/dog-house.svg" alt="dog-house">

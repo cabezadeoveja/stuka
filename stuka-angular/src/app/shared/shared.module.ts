@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms'
 
 /* Components */
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
 
 /* Angular Material */
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -16,17 +21,23 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
     MatButtonModule,
     MatIconModule,
-    FontAwesomeModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ]
 })
 export class SharedModule { }

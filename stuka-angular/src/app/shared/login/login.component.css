@@ -1,0 +1,40 @@
+button:focus {
+    outline-style: none !important;
+}
+
+.close-icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+form mat-form-field {
+    width: 100% !important;
+}
+
+.google-btn,
+.login-btn {
+    color: white;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: var(--rosado);
+}
+
+.login-btn:hover {
+    background-color: var(--rosadoHover);
+}
+
+.google-btn {
+    background-color: var(--celeste);
+}
+
+.google-btn:hover {
+    background-color: var(--celesteHover);
+}
+
+
+/* .hide-password {
+    top: -15px
+} */
