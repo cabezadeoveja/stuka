@@ -36,7 +36,15 @@
             </mat-error>
         </mat-form-field>
 
-        <button class="btn-block mt-2 login-btn" type="submit" mat-raised-button>Ingresar</button>
+        <button class="btn-block mt-2 login-btn" type="submit" mat-raised-button>
+            <span *ngIf='!loading'>
+                Ingresar
+            </span>
+            <div *ngIf='!!loading'>
+                <fa-icon [icon]="faSyncAlt" [spin]="true"  [pulse]="true"></fa-icon>
+                Ingresando...
+            </div>
+        </button>
 
     </form>
 
