@@ -1,3 +1,12 @@
+.img-login {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.img-login img {
+    width: 150px;
+}
+
 button:focus {
     outline-style: none !important;
 }
@@ -6,6 +15,13 @@ button:focus {
     position: absolute;
     right: 0px;
     top: 0;
+}
+
+form,
+.google-btn,
+.hr-o {
+    width: 90%;
+    margin-left: 5%;
 }
 
 form mat-form-field {

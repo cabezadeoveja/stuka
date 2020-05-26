@@ -1,5 +1,5 @@
 <div class="title-dialog position-relative">
-    <h1 mat-dialog-title>Ingresar</h1>
+    <!-- <h1 mat-dialog-title>Ingresar</h1> -->
     <button class="close-icon" (click)="closeDiolog()" mat-icon-button color="accent" aria-label="Example icon button with a home icon">
         <mat-icon  aria-hidden="false" aria-label="Example close icon">
             close
@@ -7,13 +7,36 @@
     </button>
 </div>
 
-<div mat-dialog-content>
+<div class="dialog-login" mat-dialog-content>
 
     <div class="img-login mb-2">
         <img src="assets/img/logo/logo.svg" alt="stuka">
     </div>
 
-    <form [formGroup]='forma' (ngSubmit)='login()'>
+
+    <mat-tab-group disablePagination='false' dynamicHeight='true'>
+        <mat-tab label="Ingresar">
+            <!--login Templates -->
+            <ng-container *ngTemplateOutlet='loginTemplate'></ng-container>
+        </mat-tab>
+        <mat-tab label="Registrar">
+            <!--Register Templates -->
+            <ng-container *ngTemplateOutlet='RegisterTemplate'></ng-container>
+        </mat-tab>
+    </mat-tab-group>
+
+    <img class="hr-o" src="assets/img/main-o.png">
+    <button class="mt-2 google-btn" type="button" mat-raised-button>
+        <img src="assets/img/icons/google-logo.svg" alt="google" width="20">
+        Google
+    </button>
+
+</div>
+
+<!-- Login Template  -->
+
+<ng-template mat-tab-label #loginTemplate>
+    <form [formGroup]='forma' (ngSubmit)='login()' class="Form-template mt-3">
 
         <mat-form-field appearance="legacy">
             <mat-label>Correo</mat-label>
@@ -28,15 +51,15 @@
             <mat-label>Contraseña</mat-label>
             <input formControlName='password' matInput [type]="hidePassword ? 'password' : 'text'">
             <button class="hide-password" type="button" mat-icon-button matSuffix (click)="hidePassword = !hidePassword">
-                <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
+                        <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
             <mat-hint>Debes introducir una contraseña</mat-hint>
             <mat-error>
                 La contraseña es <strong>requerida</strong>
             </mat-error>
         </mat-form-field>
 
-        <button class="btn-block mt-2 login-btn" type="submit" mat-raised-button>
+        <button class="btn-block mt-3 login-btn" type="submit" mat-raised-button>
             <span *ngIf='!loading'>
                 Ingresar
             </span>
@@ -47,11 +70,71 @@
         </button>
 
     </form>
+</ng-template>
 
-    <hr>
-    <button class="btn-block mt-1 google-btn" type="button" mat-raised-button>
-        <img src="assets/img/icons/google-logo.svg" alt="google" width="20">
-        Google
-    </button>
+<!-- Register Template  -->
+<ng-template mat-tab-label #RegisterTemplate>
+    <form [formGroup]='registerforma' (ngSubmit)='register()' class="Form-template mt-3">
 
-</div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Nombre</mat-label>
+            <input formControlName='name' matInput placeholder="Jose">
+            <!-- <mat-hint>Introduzca un Nombre</mat-hint> -->
+            <mat-error *ngIf='registerforma.get("name").invalid'>
+                Introduzca un <b>nombre</b>
+            </mat-error>
+        </mat-form-field>
+
+        <!--         <mat-form-field appearance="legacy">
+            <mat-label>Apellido</mat-label>
+            <input formControlName='lastname' matInput placeholder="Rodriguez">
+            <mat-error *ngIf='registerforma.get("lastname").invalid'>
+                Introduzca un <b>apellido</b>
+            </mat-error>
+        </mat-form-field> -->
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Correo</mat-label>
+            <input formControlName='email' matInput placeholder="ejemplo@ejemplo.com">
+            <mat-hint>Introduzca un correo</mat-hint>
+            <mat-error *ngIf='registerforma.get("email").invalid'>
+                Introduzca un correo Valido
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Contraseña</mat-label>
+            <input formControlName='password' matInput [type]="register2HidePassword ? 'password' : 'text'">
+            <button class="hide-password" type="button" mat-icon-button matSuffix (click)="register2HidePassword = !register2HidePassword">
+                            <mat-icon>{{ register2HidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+            <mat-hint>Debes introducir una contraseña</mat-hint>
+            <mat-error>
+                La contraseña es <strong>requerida</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Confirmar contraseña</mat-label>
+            <input formControlName='password2' matInput [type]="register2HidePassword ? 'password' : 'text'">
+            <button class="hide-password" type="button" mat-icon-button matSuffix (click)="register2HidePassword = !register2HidePassword">
+                            <mat-icon>{{ register2HidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+            <!-- <mat-hint>Debes introducir una contraseña</mat-hint> -->
+            <mat-error>
+                La contraseña deben ser iguales
+            </mat-error>
+        </mat-form-field>
+
+        <button class="btn-block mt-3 login-btn" type="submit" mat-raised-button>
+                <span *ngIf='!registerLoading'>
+                    Registrar
+                </span>
+                <div *ngIf='!!registerLoading'>
+                    <fa-icon [icon]="faSyncAlt" [spin]="true"  [pulse]="true"></fa-icon>
+                    Registrando...
+                </div>
+            </button>
+
+    </form>
+</ng-template>

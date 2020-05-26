@@ -15,9 +15,13 @@ export class LoginComponent implements OnInit {
 
   public faSyncAlt = faSyncAlt;
   public loading = false;
+  public registerLoading = false;
 
   public forma: FormGroup;
+  public registerforma: FormGroup;
   public hidePassword = true;
+  public registerHidePassword = true;
+  public register2HidePassword = true;
 
   constructor(
     public dialogRef: MatDialogRef<LoginComponent>,
@@ -26,10 +30,11 @@ export class LoginComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.createForm();
+    this.createLoginForm();
+    this.createRegisterForm();
   }
 
-  createForm(){
+  createLoginForm(){
 
     this.forma = this.fb.group({
       email    : [ '', [Validators.required, Validators.email] ],
@@ -37,6 +42,19 @@ export class LoginComponent implements OnInit {
     })
 
   }
+
+  createRegisterForm(){
+
+    this.registerforma = this.fb.group({
+      name : ['', [Validators.required]],
+/*       lastname : ['', [Validators.required]], */
+      email    : [ '', [Validators.required, Validators.email] ],
+      password : ['', [Validators.required]],
+      password2 : ['', [Validators.required]],
+    })
+
+  }
+
 
   closeDiolog(): void {
     this.dialogRef.close();
@@ -53,4 +71,10 @@ export class LoginComponent implements OnInit {
       })
     }
   }
+
+  register(){
+    console.log(this.registerforma);
+    this.registerLoading = true
+  }
+
 }
