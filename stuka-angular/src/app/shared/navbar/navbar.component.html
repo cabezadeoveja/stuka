@@ -21,19 +21,19 @@
                             </button>
                         </li>
                         <li class="nav-item">
-                            <button mat-raised-button>
-                            <a>Adoptar</a>
-                        </button>
+                            <button [routerLink]="[ '/adoptar']" mat-raised-button>
+                                <a>Adoptar</a>
+                            </button>
                         </li>
                         <li class="nav-item">
                             <button mat-raised-button>
-                            <a>Apadrinar</a>
-                        </button>
+                                <a>Apadrinar</a>
+                            </button>
                         </li>
                         <li class="nav-item">
                             <button mat-raised-button>
-                            <a>Ser voluntario</a>
-                        </button>
+                                <a>Ser voluntario</a>
+                            </button>
                         </li>
                     </ul>
 
@@ -47,10 +47,10 @@
                             </button>
                         </li>
                         <li class="nav-item">
-                            <button mat-flat-button>
+                            <button routerLink='/inicio' mat-flat-button>
                                 <img class='mobile-menu-icon' src="assets/img/icons/dog-house.svg" alt="dog-house">
                                 <a>Inicio</a>
-                        </button>
+                            </button>
                         </li>
                         <li class="nav-item">
                             <button mat-flat-button>
@@ -79,7 +79,7 @@
                     </ul>
                     <ul class="navbar-nav menu-lg-dinamic d-lg-none d-xl-none">
                         <li class="nav-item">
-                            <button mat-flat-button>
+                            <button routerLink='/adoptar' mat-flat-button>
                                 <img class='mobile-menu-icon' src="assets/img/icons/paw-print.svg" alt="Adopat">
                                 <a>Adoptar</a>
                             </button>

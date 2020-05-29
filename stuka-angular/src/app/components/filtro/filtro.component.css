@@ -1,0 +1,37 @@
+.texto-filtro {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.texto-filtro h1 {
+    font-size: 40px;
+}
+
+.texto-filtro p {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.select-input {
+    min-width: 200px;
+}
+
+.buscar-form .form-row {
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.buscar-form .form-row .form-group {
+    /* margin-right: 20px; */
+}
+
+.buscar-form button {
+    height: 38px;
+    border-radius: 24px;
+}
+
+.hr {
+    border-top: 8px solid #DE5C8E;
+}

@@ -29,6 +29,15 @@ body {
     --gris: #707070;
 }
 
+.vagRounded-bt {
+    font-family: 'vagRounded-bt';
+}
+
+.hr {
+    width: 100px;
+    margin-top: 8px;
+}
+
 
 /* Inicio carousel btn */
 
@@ -169,6 +178,13 @@ h6 a:hover {
 
 .breadcrumb-item a {
     color: var(--rosado);
+}
+
+
+/* Section adoptar */
+
+.section-filter {
+    background-color: var(--celeste);
 }
 
 @media only screen and (max-width: 600px) {

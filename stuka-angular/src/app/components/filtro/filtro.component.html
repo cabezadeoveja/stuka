@@ -1,0 +1,30 @@
+<section class="section-filter">
+    <div class="texto-filtro vagRounded-bt">
+        <p class="vagRounded-bt">Conoce a todos nuestros perritos</p>
+        <h1 class="vagRounded-bt">ADOPTA</h1>
+        <div class="hr"></div>
+    </div>
+
+    <form class="buscar-form">
+        <div class="form-row">
+            <div class="form-group select-input col-md-3">
+                <mat-select placeholder="Sexo" class="form-control">
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </div>
+
+            <div class="form-group select-input col-md-3">
+                <mat-select placeholder="Etapa de vida" class="form-control">
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </div>
+
+            <div class="form-group select-input col-md-3">
+                <mat-select placeholder="Personalidad" class="form-control">
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </div>
+            <button class="col-md-3" mat-raised-button color="accent">Buscar</button>
+        </div>
+    </form>
+</section>
