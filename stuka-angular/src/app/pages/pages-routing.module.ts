@@ -10,6 +10,7 @@ const routes: Routes = [
       { path: 'inicio', loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule) },
       { path: 'adoptar', loadChildren: () => import('./adopta/adopta.module').then(m => m.AdoptaModule) },
       { path: 'apadrinar', loadChildren: () => import('./apadrinar/apadrinar.module').then(m => m.ApadrinarModule) },
+      { path: 'quienes-somos', loadChildren: () => import('./quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule) },
       { path: '', redirectTo: 'inicio'}
     ]
   },

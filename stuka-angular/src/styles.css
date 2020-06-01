@@ -10,7 +10,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
 }
@@ -30,6 +29,15 @@ body {
 }
 
 .vagRounded-bt {
+    font-family: 'vagRounded-bt';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'vagRounded-bt';
 }
 
