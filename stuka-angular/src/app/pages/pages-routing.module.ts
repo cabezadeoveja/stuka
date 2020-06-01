@@ -11,6 +11,7 @@ const routes: Routes = [
       { path: 'adoptar', loadChildren: () => import('./adopta/adopta.module').then(m => m.AdoptaModule) },
       { path: 'apadrinar', loadChildren: () => import('./apadrinar/apadrinar.module').then(m => m.ApadrinarModule) },
       { path: 'quienes-somos', loadChildren: () => import('./quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule) },
+      { path: 'contacto', loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule) },
       { path: '', redirectTo: 'inicio'}
     ]
   },
