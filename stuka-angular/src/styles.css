@@ -38,6 +38,11 @@ body {
     margin-top: 8px;
 }
 
+.ancho-max {
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+
 
 /* Inicio carousel btn */
 

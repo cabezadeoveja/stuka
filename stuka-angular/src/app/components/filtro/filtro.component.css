@@ -23,15 +23,21 @@
     margin: 0 auto;
 }
 
-.buscar-form .form-row .form-group {
-    /* margin-right: 20px; */
+.buscar-form {
+    padding-bottom: 30px;
 }
 
 .buscar-form button {
     height: 38px;
     border-radius: 24px;
+    margin-bottom: 1rem;
 }
 
-.hr {
+.section-filter .texto-filtro {
+    margin-bottom: 30px;
+}
+
+.section-filter .hr {
     border-top: 8px solid #DE5C8E;
+    margin: 0 auto
 }

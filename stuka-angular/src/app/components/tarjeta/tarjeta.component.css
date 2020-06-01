@@ -1,0 +1,11 @@
+.tarjeta-perro ul {
+    margin-left: 10px;
+}
+
+.tarjeta-perro ul li p {
+    color: #707070;
+}
+
+.tarjeta-perro ul li {
+    color: #d15182 !important;
+}

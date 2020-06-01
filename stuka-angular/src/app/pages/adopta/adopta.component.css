@@ -1,0 +1,79 @@
+.sections-perros {
+    padding-top: 35px;
+}
+
+.tarjetas-perros {
+    /*     height: 400px;
+    background-color: blue; */
+}
+
+.manuales {
+    height: 400px;
+}
+
+.manuales h3 {
+    font-size: 25px;
+    color: #707070;
+}
+
+.manuales .hr {
+    border: 2px solid #d02671;
+    width: 82px;
+}
+
+.caja-manual {
+    background: #d15182 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    max-width: 195px;
+    max-height: 105px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.caja-manual p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tarjetas-perros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetas-perros app-tarjeta {
+    flex-basis: 30%;
+    margin-bottom: 25px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+@media only screen and (max-width: 780px) {
+    .tarjetas-perros app-tarjeta {
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .manuales h3 {
+        text-align: center;
+    }
+    .manuales .hr {
+        margin: 0 auto;
+    }
+    .caja-manuales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjetas-perros app-tarjeta {
+        flex-basis: 90%;
+    }
+}

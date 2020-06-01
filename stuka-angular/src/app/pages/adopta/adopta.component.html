@@ -1,2 +1,28 @@
-<app-filtro>
-</app-filtro>
+<app-filtro></app-filtro>
+<section class="sections-perros">
+    <div class="ancho-max">
+
+        <div class="row">
+            <div class="col-md-9 col-12 tarjetas-perros">
+
+                <app-tarjeta *ngFor="let item of [1,2,3,4,5]"></app-tarjeta>
+
+            </div>
+            <div class="col-md-3 col-12 manuales">
+                <h3 class="vagRounded-bt">Descarga antes de poder adoptar</h3>
+                <div class='hr'></div>
+                <div class="caja-manuales">
+
+                    <div class='caja-manual'>
+                        <p class="vagRounded-bt">Manual de los 30 primeros dias</p>
+                    </div>
+                    <div class='caja-manual'>
+                        <p class="vagRounded-bt">Manual de adoptame</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
