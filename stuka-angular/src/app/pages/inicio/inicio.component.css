@@ -38,6 +38,10 @@
 
 /* Inici Como ayudar */
 
+.como-ayudar .ancho-max {
+    max-width: 1400px;
+}
+
 .row-2-como-ayudar .text-center {
     padding: 0px !important;
 }

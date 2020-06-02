@@ -13,7 +13,8 @@ const routes: Routes = [
       { path: 'quienes-somos', loadChildren: () => import('./quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule) },
       { path: 'contacto', loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule) },
       { path: 'galeria', loadChildren: () => import('./galeria/galeria.module').then(m => m.GaleriaModule) },
-      { path: '', redirectTo: 'inicio'}
+      { path: 'donacion', loadChildren: () => import('./donacion/donacion.module').then(m => m.DonacionModule) },
+      { path: '**', redirectTo: 'inicio'}
     ]
   },
 ];
