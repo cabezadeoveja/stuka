@@ -1,0 +1,39 @@
+<div class="">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb miga-de-pan">
+            <li class="breadcrumb-item"><a routerLink='/inicio'>Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Galería</li>
+        </ol>
+    </nav>
+
+    <section class="seccion title-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h1 class="text-center title">GALERÍA</h1>
+                    <h5 class="text-center parrafo">Conoce algunas de nuestras actividades</h5>
+                </div>
+            </div>
+            <div class="row title-top">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="text-center botones-select">
+                        <button (click)="construirImagenes()" class="btn btn-default filter-button active" data-filter="all">Todas</button>
+                        <button (click)="filtrarImgenes('fundacion')" class="btn btn-default filter-button" data-filter="hdpe">Fundación Stuka</button>
+                        <button (click)="filtrarImgenes('adopcion')" class="btn btn-default filter-button" data-filter="sprinkle">Jornada de Adopción</button>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="imagenes.length > 0" class="row">
+                <div *ngFor="let img of imagenes" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-12 filter hdpe">
+                    <img [src]="img" class="img-responsive rounded" style="width: inherit;">
+                </div>
+            </div>
+            <div *ngIf="imagenes.length == 0" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
