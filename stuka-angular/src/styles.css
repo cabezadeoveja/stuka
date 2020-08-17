@@ -119,26 +119,9 @@ h6 {
 
 
 /*header*/
-
-.btn-donar {
-    padding: 17px 0;
-    background: var(--rosado);
-    border-radius: 4px;
-}
-
-.btn-donar:hover {
-    background: var(--rosado);
-}
-
 .text-fff {
     color: white !important;
 }
-
-.btn-pading {
-    padding-bottom: 14px !important;
-    padding-top: 14px !important;
-}
-
 h6 a {
     color: #fff;
 }

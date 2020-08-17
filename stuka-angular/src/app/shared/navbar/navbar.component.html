@@ -1,5 +1,79 @@
 <header>
-    <div class='header'>
+    <header class="d-none d-lg-block menu-fijo">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <h3 class="my-auto">
+                <a [routerLink]="[ '/inicio']"><img src="assets/img/logo/logo.svg" alt="Stuka" width="150"class="img-fluid logotipo"></a>
+            </h3>
+            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0" style="margin-top: 10px;">
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/inicio']">Inicio</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/quienes-somos']">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/adoptar']">Adopta</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/apadrinar']">Apadrinar</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/voluntario']">Ser voluntario</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/noticias']">Noticias</a>
+                    </li>
+                    <li class="nav-item"[routerLinkActive]="['active-link']">
+                        <a class="nav-link btn-menu" [routerLink]="[ '/contacto']">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div [routerLinkActive]="['active-link']">
+                <button class="boton-donar" [routerLink]="[ '/donacion']"><img class="img-menu" src="assets/img/icons/heart.svg" alt="donación">Donar</button>
+            </div>
+        </nav>
+    </header>
+
+    <header class="d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <h3 class="img-movil"><a [routerLink]="[ '/inicio']">
+                <img class="border-none" src="assets/img/logo/logo.svg" alt="Logo Stuka" width="90"class="img-fluid logotipo_small"></a>
+            </h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+                <ul class="navbar-nav img-movil" style="margin-top: 10px;">
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link active-item-movil categoria" [routerLink]="[ '/inicio']"><img class="img-menu m-r" src="assets/img/icons/dog-house.svg" alt="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/quienes-somos']"><img class="img-menu m-r" src="assets/img/icons/paw-print.svg" alt="quines somos">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/adoptar']"><img class="img-menu m-r" src="assets/img/icons/adopt.svg" alt="adopta">Adopta</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/apadrinar']"><img class="img-menu m-r" src="assets/img/icons/pet.svg" alt="adopta">Apadrinar</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/voluntario']"><img class="img-menu m-r" src="assets/img/icons/paw.svg" alt="adopta">Ser voluntario</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/noticias']"><img class="img-menu m-r" src="assets/img/icons/news.svg" alt="adopta">Noticias</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active-link-xs']">
+                        <a class="nav-link categoria" [routerLink]="[ '/contacto']"><img class="img-menu m-r" src="assets/img/icons/email.svg" alt="contacto">Contáctanos</a>
+                    </li>
+                    <li class="nav-item btn-donar" [routerLinkActive]="['active-link-donar']">
+                        <a class="text-fff" [routerLink]="[ '/donacion']"><img class="img-menu m-r" src="assets/img/icons/heart.svg" alt="donación">DONAR</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--<div class='header'>
         <nav class="navbar navbar-expand-lg navbar-light p-0 px-lg-5">
             <a class="navbar-brand">
                 <img class="img-logo" src="assets/img/logo/logo.svg" alt="STUKA">
@@ -58,12 +132,12 @@
                                 <a>Quiénes somos</a>
                             </button>
                         </li>
-                        <!--                         <li class="nav-item">
+                                              <li class="nav-item">
                             <button mat-flat-button>
                                 <img class='mobile-menu-icon' src="assets/img/icons/news.svg" alt="Noticias">
                                 <a>Noticias</a>
                             </button>
-                        </li> -->
+                        </li> 
                         <li class="nav-item">
                             <button routerLink='/galeria' mat-flat-button>
                                 <img class='mobile-menu-icon' src="assets/img/icons/dog-house.svg" alt="dog-house">
@@ -113,5 +187,5 @@
             </div>
         </nav>
 
-    </div>
+    </div>-->
 </header>
